@@ -1,0 +1,350 @@
+@font-face {
+  font-family:"edgeicons";
+  src:url("https://abs.twimg.com/a/1553130943/font/edge-icons-Regular.eot");
+  src:url("https://abs.twimg.com/a/1553130943/font/edge-icons-Regular.eot?#iefix") format("embedded-opentype"),
+  url("https://abs.twimg.com/a/1553130943/font/edge-icons-Regular.woff") format("woff"),
+  url("https://abs.twimg.com/a/1553130943/font/edge-icons-Regular.ttf") format("truetype")
+}
+
+/* .stream start */
+.stream-item:before, .stream-item:after {
+  content:" ";
+  display:table
+}
+.stream-item {
+  margin: 10px;
+  outline: rgb(51, 51, 51) none 0px;
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 2px 2px 2px 2px;
+  position:relative;
+}
+@media screen and (-webkit-min-device-pixel-ratio:2),screen and (min-resolution:192dpi) {
+  .stream-item {
+    background-clip:border-box
+  }
+}
+.stream-item:after {
+  clear:both
+}
+/* .stream end */
+
+/* .tweet start */
+.tweet:hover {
+  background-color:#f5f8fa
+}
+.tweet {
+  border-bottom:1px solid #e6ecf0;
+  cursor:pointer;
+  position:relative;
+  min-height:51px;
+  padding:9px 12px;
+  border-bottom:1px solid #e6ecf0;
+  width: 600px;
+}
+
+.tweet>.context {
+  margin-left:58px
+}
+.tweet-context {
+  font-size:12px;
+  margin-top:-3px;
+  margin-bottom:3px
+}
+
+.with-icn:hover,
+.with-icn:focus {
+  text-decoration: none
+}
+.with-icn {
+  font-size:12px;
+  color:#657786
+}
+.tweet>.context .with-icn {
+  margin-left:-24px
+}
+
+.Icon:after,
+.Icon:before {
+  display:block;
+  font-family:"edgeicons";
+  font-weight:normal;
+  font-style:normal;
+  text-align:center;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.Icon {
+  background:transparent;
+  display:inline-block;
+  font-style:normal;
+  vertical-align:baseline;
+  position:relative
+}
+.tweet .with-icn .Icon {
+  background:transparent;
+  font-size:16px;
+  position:relative;
+  top:2px
+}
+.with-icn .Icon {
+  margin-right:4px
+}
+.tweet>.context .with-icn .Icon {
+  color:#657786;
+  font-size:14px;
+  margin:0 6px 0 0;
+  position:relative;
+  top:2px
+}
+.Icon--small {
+  font-size:16px;
+  line-height:15px
+}
+.Icon--heartBadge:before {
+  content:"\f015"
+}
+.Icon--heartBadge {
+   color:#e0245e
+}
+/* .tweet end */
+
+/* .content start */
+.stream-item .content {
+  margin-left:58px
+}
+
+/* .stream-item-header start */
+.stream-item-header {
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:flex
+}
+div.account-group:hover, .account-group {
+  text-decoration:none
+}
+.stream-item-header .account-group {
+  margin-right:5px;
+  color:#14171a;
+  display:-moz-inline-box;
+  display:-ms-inline-flexbox;
+  display:inline-flex;
+  flex-shrink:1;
+  overflow:hidden
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  -moz-force-broken-image-icon: 1;
+}
+.stream-item-header .avatar {
+  float:left;
+  margin-top:3px;
+  margin-left:-58px;
+  position:absolute
+}
+.account-group:focus {
+  text-decoration:none
+}
+.stream-item-header .account-group .FullNameGroup {
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:flex;
+  max-width:100%
+}
+.fullname {
+  word-break:break-all;
+  color:#14171a;
+  font-size:14px;
+  font-weight:bold
+}
+a.account-group:hover .fullname,
+a.account-group:focus .fullname {
+  color:#1c94e0;
+  text-decoration:underline
+}
+.u-textTruncate {
+  max-width:100%;
+  overflow:hidden!important;
+  text-overflow:ellipsis!important;
+  white-space:nowrap!important;
+  word-wrap:normal!important
+}
+.account-group .UserBadges {
+  font-size:.9em
+}
+a.account-group:hover .username,
+a.account-group:focus .username {
+  text-decoration:none;
+  color:#657786
+}
+.account-group .username {
+  font-size:14px;
+  color:#657786
+}
+.u-dir[dir="ltr"] {
+  direction:ltr!important;
+  text-align:left!important;
+  unicode-bidi:embed
+}
+.time {
+  font-size:14px;
+  color:#657786
+}
+.tweet .time {
+  color:#657786
+}
+.tweet .time:before {
+  content:"\00b7"
+}
+.stream-item-header .time {
+  white-space:nowrap
+}
+.stream-item-header .time {
+  margin-right:5px
+}
+.u-hiddenVisually {
+  border:0!important;
+  clip:rect(1px,1px,1px,1px)!important;
+  font-size:1px!important;
+  height:1px!important;
+  overflow:hidden!important;
+  padding:0!important;
+  position:absolute!important;
+  width:1px!important
+}
+.ProfileTweet-action {
+  display:inline-block;
+  min-width:80px
+}
+.ProfileTweet-action:last-child:not(.ProfileTweet-action--more) {
+  min-width:26px
+}
+.ProfileTweet-action--more {
+  margin:-2px -9px 0 auto;
+  min-width:inherit
+}
+.dropdown {
+  position:relative
+}
+.ProfileTweet-actionButton {
+  color:#657786;
+  display:inline-block;
+  font-size:16px;
+  line-height:1;
+  padding:0 2px;
+  position:relative
+}
+.ProfileTweet-action--more .ProfileTweet-actionButton {
+  padding:2px 9px
+}
+.IconContainer {
+  display:inline-block;
+  line-height:0;
+  position:relative;
+  vertical-align:middle
+}
+.Icon--caretDownLight:before {
+  content:"\f196"
+}
+/* .stream-item-header end */
+
+.TweetTextSize {
+  font-size:14px;
+  line-height:20px;
+  white-space:pre-wrap;
+  word-wrap:break-word
+}
+.tweet .js-tweet-text {
+  white-space:pre-wrap
+}
+
+/* .stream-item-footer start */
+.tweet .stream-item-footer {
+  font-size:12px;
+  padding-top:1px
+}
+.ProfileTweet-actionCount:focus,
+.ProfileTweet-actionCount:hover {
+  text-decoration:none
+}
+.ProfileTweet-action--retweet .ProfileTweet-actionButton:focus .ProfileTweet-actionCount {
+  color:#17bf63
+}
+.ProfileTweet-actionCount {
+  color:#657786;
+  display:inline-block;
+  font-size:12px;
+  font-weight:bold;
+  line-height:1;
+  margin-left:6px;
+  position:relative;
+  vertical-align:text-bottom
+}
+.ProfileTweet-action--retweet:hover .ProfileTweet-actionCount {
+  color:#17bf63
+}
+.ProfileTweet-action--favorite:hover .ProfileTweet-actionCount {
+  color:#e0245e
+}
+
+.ProfileTweet-actionList {
+  font-size:0;
+  height:18px;
+  line-height:1;
+  margin-bottom:2px;
+  margin-top:10px
+}
+.ProfileTweet-action--reply:hover .ProfileTweet-actionCount,
+.ProfileTweet-action--reply:hover .ProfileTweet-actionButton,
+.ProfileTweet-action--reply .ProfileTweet-actionButton:focus,
+.ProfileTweet-action--reply .ProfileTweet-actionButton:focus .ProfileTweet-actionCount {
+  color:#1da1f2
+}
+.Icon--medium {
+  font-size:18px;
+  line-height:18px
+}
+.Icon--reply:before {
+  content:"\f151"
+}
+.ProfileTweet-action--retweet:hover .ProfileTweet-actionButton,
+.ProfileTweet-action--retweet .ProfileTweet-actionButton:focus {
+  color:#17bf63
+}
+.Icon--retweet:before {
+  content:"\f152"
+}
+.ProfileTweet-action--favorite:hover .ProfileTweet-actionButton,
+.ProfileTweet-action--favorite .ProfileTweet-actionButton:focus,
+.ProfileTweet-action--favorite .ProfileTweet-actionButton:focus .ProfileTweet-actionCount {
+  color:#e0245e
+}
+.Icon--heart:before {
+  content:"\f148"
+}
+.ProfileTweet-action--favorite:hover .HeartAnimation,
+.ProfileTweet-action--favorite .ProfileTweet-actionButton:focus .HeartAnimation {
+  background-position:3.571428571428571%
+}
+.HeartAnimation {
+  position:absolute;
+  background-image:url(https://abs.twimg.com/a/1553130943/img/animations/web_heart_animation_edge.png);
+  background-position:left;
+  background-repeat:no-repeat;
+  background-size:2900%;
+  height:50px;
+  width:50px;
+  left:50%;
+  top:50%;
+  -ms-transform:translate(-50%,-47.5%);
+  transform:translate(-50%,-47.5%)
+}
+.ProfileTweet-action--dm .ProfileTweet-actionButton {
+  font-size:15px
+}
+.Icon--dm:before {
+  content:"\f054"
+}
+/* .stream-item-footer end */
+/* .content end */
