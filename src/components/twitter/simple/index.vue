@@ -17,11 +17,12 @@
       </span>
     </el-dialog>
 
-    <div class="tweet tweet-has-context stream-item" id="TweetBox">
+    <div class="tweet tweet-has-context stream-item twitter" id="TweetBox">
       <div class="context">
         <div class="tweet-context with-icn">
           <span class="Icon Icon--small Icon--heartBadge"></span>
           <span :contenteditable="edit">SOMEONE liked</span>
+          <span id="watermark">什么是真相？fakes.netlify.com</span>
         </div>
       </div>
 
@@ -32,10 +33,10 @@
                 <img v-if="avatar" :src="avatar" class="avatar2" alt="">
                 <i v-else class="el-icon-plus avatar-uploader-icon"></i>
               </el-upload>
-              <a v-else href="javascript:void(0)"><img :src='avatar' class="avatar" alt=""/></a>
+              <img :src='avatar' class="avatar" alt=""/>
               <span class="FullNameGroup">
                 <strong class="fullname u-textTruncate">
-                  <a href="" v-html='nickname' :contenteditable="edit"></a>
+                  <a v-html='nickname' :contenteditable="edit"></a>
                 </strong>
                 <span class="UserBadges"></span>
                 <span class="UserNameBreak">&nbsp;</span>
@@ -43,9 +44,8 @@
               <span class="username u-dir u-textTruncate" dir="ltr">@<b v-html='username' :contenteditable="edit"></b></span>
             </div>
             <small class="time">
-              <a href="javascript:void(0)" class="tweet-timestamp" title="6:00 AM - 28 Mar 2019">
+              <a class="tweet-timestamp" title="6:00 AM - 28 Mar 2019">
                 <span class="_timestamp" aria-hidden="true" :contenteditable="edit">很久很久以前</span>
-                <span class="u-hiddenVisually" data-aria-label-part="last" :contenteditable="edit">很久很久以前</span>
               </a>
             </small>
             <div class="ProfileTweet-action ProfileTweet-action--more">
@@ -150,7 +150,7 @@ export default {
       starNumber: 99999,
       from: "iPhone客户端",
       time: "1912-11-06 14:31",
-      content: "我即使是死了，钉在棺材里了，也要在墓里，用这腐朽的声带喊出：“我没说过这句话”",
+      content: "我即使是死了，钉在棺材里了，也要在墓里，用这腐朽的声带喊出：“我没说过这句话”。",
       canvas: "",
       mentionPerson: "",
       isMentioned: false,
@@ -225,9 +225,6 @@ export default {
 </script>
 
 <style scoped src='./style.css'></style>
-<style scoped src='./twitter_core.bundle.css'></style>
-<style scoped src='./twitter_more_1.bundle.css'></style>
-<style scoped src='./twitter_more_2.bundle.css'></style>
 <style lang='scss'>
 .avatar-uploader-twitter-simple {
   .el-upload {
@@ -273,6 +270,7 @@ export default {
   align-items: center;
 }
 #watermark {
-  transform: rotate(180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
 }
 </style>

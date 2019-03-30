@@ -6,13 +6,338 @@
   url("https://abs.twimg.com/a/1553130943/font/edge-icons-Regular.ttf") format("truetype")
 }
 
+/* basic elements */
+.twitter button {
+  border:0
+}
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
+body {
+  margin:0
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display:block
+}
+audio,
+canvas,
+progress,
+video {
+  display:inline-block;
+  vertical-align:baseline
+}
+audio:not([controls]) {
+  display:none;
+  height:0
+}
+[hidden],
+template {
+  display:none
+}
+.twitter a {
+  background:transparent
+}
+.twitter a:active,
+.twitter a:hover {
+  outline:0
+}
+abbr[title] {
+  border-bottom:1px dotted
+}
+.twitter b {
+  font-weight:normal
+}
+strong {
+  font-weight:bold
+}
+dfn {
+  font-style:italic
+}
+h1 {
+  font-size:2em;
+  margin:.67em 0
+}
+mark {
+  background:#ff0;
+  color:#14171a
+}
+small.twitter {
+  font-size:80%
+}
+sub,
+sup {
+  font-size:75%;
+  line-height:0;
+  position:relative;
+  vertical-align:baseline
+}
+sup {
+  top:-0.5em
+}
+sub {
+  bottom:-0.25em
+}
+img {
+  border:0
+}
+svg:not(:root) {
+  overflow:hidden
+}
+figure {
+  margin:1em 40px
+}
+hr {
+  -moz-box-sizing:content-box;
+  box-sizing:content-box;
+  height:0
+}
+pre {
+  overflow:auto
+}
+code,
+kbd,
+pre,
+samp {
+  font-family:monospace,monospace;
+  font-size:1em
+}
+.twitter button,
+input,
+optgroup,
+select,
+textarea {
+  color:inherit;
+  font:inherit;
+  margin:0
+}
+.twitter button {
+  overflow:visible
+}
+.twitter button,
+select {
+  text-transform:none
+}
+.twitter button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance:button;
+  cursor:pointer
+}
+.twitter button[disabled],
+html input[disabled] {
+  cursor:default
+}
+.twitter button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border:0;
+  padding:0
+}
+input {
+  line-height:normal
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  padding:0
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height:auto
+}
+input[type="search"] {
+  -webkit-appearance:textfield;
+  -moz-box-sizing:content-box;
+  box-sizing:content-box
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance:none
+}
+fieldset {
+  border:1px solid #c0c0c0;
+  margin:0 2px;
+  padding:.35em .625em .75em
+}
+legend {
+  border:0;
+  padding:0
+}
+textarea {
+  overflow:auto
+}
+optgroup {
+  font-weight:bold
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0
+}
+td,
+th {
+  padding:0
+}
+body {
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  position:relative
+}
+@media screen and (-webkit-min-device-pixel-ratio:2),screen and (min-resolution:2dppx) {
+  body {
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased
+  }
+}
+body.ms-windows {
+  font-family:"Segoe UI",Arial,sans-serif
+}
+body.ar,
+body.ur,
+body.fa {
+  font-family:Tahoma,Arial,sans-serif
+}
+body.ja {
+  font-family:Arial,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif
+}
+body {
+  background:#e6ecf0;
+  color:#14171a;
+  font-size:14px;
+  line-height:20px;
+  overflow-y:scroll
+}
+.twitter a {
+  /*color:#1c94e0;*/
+  text-decoration:none
+}
+.twitter a:hover,
+.twitter a:focus,
+.twitter a:active {
+  text-decoration:underline
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin:0
+}
+.twitter button {
+  background:transparent;
+  border:0;
+  padding:0;
+  transition:box-shadow .15s ease-in-out
+}
+.twitter button:focus {
+  outline:0;
+  box-shadow:0 0 0 2px #fff,0 0 2px 4px rgba(0,132,180,0.5)
+}
+fieldset {
+  border:0;
+  margin:0;
+  padding:0
+}
+iframe {
+  border:0
+}
+ol,
+ul {
+  margin:0;
+  list-style:none;
+  padding:0
+}
+li {
+  text-align:inherit
+}
+[tabindex="-1"]:focus {
+  outline:none!important
+}
+.twitter a:focus {
+  outline:0
+}
+.twitter a>img:first-child:last-child {
+  transition:box-shadow .15s ease-in-out
+}
+.twitter a:focus>img:first-child:last-child {
+  outline:0;
+  box-shadow:0 0 0 2px #fff,0 0 2px 4px rgba(0,132,180,0.5)
+}
+.twitter a.hide-focus {
+  text-decoration:none
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering:optimizeLegibility
+}
+h1 {
+  font-size:24px;
+  line-height:.8
+}
+h2 {
+  color:#66757f;
+  font-size:22px;
+  line-height:22px
+}
+h3 {
+  color:#66757f;
+  font-size:20px;
+  line-height:22px
+}
+h4 {
+  font-size:12px;
+  line-height:18px
+}
+h5,
+h6 {
+  font-size:10px
+}
+small.twitter {
+  font-size:12px
+}
+ol {
+  list-style:decimal;
+  margin-left:20px
+}
+hr {
+  border:0;
+  border-top:1px solid #e6ecf0;
+  height:0;
+  margin:14px 0 0;
+  padding:0
+}
+/* basic element end */
+
 /* .stream start */
 .stream-item:before, .stream-item:after {
   content:" ";
   display:table
 }
 .stream-item {
-  margin: 10px;
+  /*margin: 10px;*/
   outline: rgb(51, 51, 51) none 0px;
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 2px 2px 2px 2px;
@@ -39,7 +364,7 @@
   min-height:51px;
   padding:9px 12px;
   border-bottom:1px solid #e6ecf0;
-  width: 600px;
+  width: 564px;
 }
 
 .tweet>.context {
@@ -191,6 +516,10 @@ a.account-group:focus .username {
   font-size:14px;
   color:#657786
 }
+.time a {
+  font-size:14px;
+  color:#657786
+}
 .tweet .time {
   color:#657786
 }
@@ -225,14 +554,6 @@ a.account-group:focus .username {
   min-width:inherit
 }
 .dropdown {
-  position:relative
-}
-.ProfileTweet-actionButton {
-  color:#657786;
-  display:inline-block;
-  font-size:16px;
-  line-height:1;
-  padding:0 2px;
   position:relative
 }
 .ProfileTweet-action--more .ProfileTweet-actionButton {
@@ -345,6 +666,14 @@ a.account-group:focus .username {
 }
 .Icon--dm:before {
   content:"\f054"
+}
+button.ProfileTweet-actionButton {
+  color:#657786;
+  display:inline-block;
+  font-size:16px;
+  line-height:1;
+  padding:0 2px;
+  position:relative
 }
 /* .stream-item-footer end */
 /* .content end */
